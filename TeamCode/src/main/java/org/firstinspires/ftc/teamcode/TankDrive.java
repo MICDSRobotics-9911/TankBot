@@ -28,6 +28,6 @@ public class TankDrive extends OpMode {
     @Override
     public void loop() {
         this.tankDrive.getMotor1().setPower(gamepad1.left_stick_y);
-        this.tankDrive.getMotor1().setPower(gamepad1.right_stick_y);
+        this.tankDrive.getMotor2().setPower(-gamepad1.right_stick_y);
     }
 }
